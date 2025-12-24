@@ -1,28 +1,28 @@
-# Somali-News-Classification-Dataset
-This repository provides a reproducible pipeline to build a balanced Somali news headline dataset for text classification.
+# Somali News Classification Dataset (SNCD)
 
-Labels
-Politics
-World
-Sports
-Economy
-Target size is configurable (default: 5255 rows per label).
+SNCD is a balanced Somali-language news headline dataset designed for
+text classification and NLP research in low-resource settings.
 
-What the pipeline saves
-Each row contains:
+## Labels
+- Politics
+- World
+- Sports
+- Economy
 
-text (headline)
-label
-source
-url some of them NAN
-Sources (as stored in the source column)
-Unique sources used in the dataset:
+Each label contains 5,255 samples (balanced).
 
-Caasimada
-Kooxda
-RadioMuqdisho
-SomaliWikipedia
-SomaliChamber
-PuntlandMOF
-RadioWaamo
-Hiiraan
+## Columns
+- text: news headline
+- label: category
+- source: news outlet
+- url: original article link (if available)
+
+## Sources
+Caasimada, Kooxda, Radio Muqdisho, Radio Waamo, Hiiraan,
+Somali Wikipedia, Somali Chamber, Puntland Ministry of Finance
+
+## License
+MIT License
+
+## Citation
+See `CITATION.cff`
